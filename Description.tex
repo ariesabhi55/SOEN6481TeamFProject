@@ -1,0 +1,82 @@
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url}
+
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\title{
+		%\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{Department of Computer Science and Software Engineering } \\ [25pt]
+		\horrule{0.5pt} \\[0.4cm]
+		\huge Champernowne Constant (C10) \\
+		\horrule{2pt} \\[0.5cm]
+}
+
+\author{Abhishek Rajput\\ \texttt{aries.abhi55@gmail.com}} % Author name and email address
+\usepackage{datetime}
+\newdate{date}{05}{07}{2019}
+\date{\displaydate{date}}
+
+%%% Begin document
+\begin{document}
+\maketitle
+\section*{Introduction}
+In mathematics, the Champernowne constant C10 is a transcendental real constant whose decimal expansion has important properties. It is named after economist and mathematician D. G. Champernowne, who published it as an undergraduate in 1933.
+For base 10, the number is defined by concatenating representations of successive integers:
+\[ C10 = 0.12345678910111213141516\cdots \]  
+
+Champernowne constants can also be constructed in other bases, similarly, for example:
+
+\[ C2 = 0.11011100101110111\cdots \]
+\[ C3 = 0.12101112202122\cdots \]
+
+The Champernowne constants can be expressed exactly as infinite series:\newline
+
+{\displaystyle C_{m}=\sum _{n=1}^{\infty }{\frac {n}{10_{b}^{~\left(\sum \limits _{k=1}^{n}\left\lceil \log _{10_{b}}(k+1)\right\rceil \right)}}}} \newline
+
+
+
+where {\displaystyle \lceil {x}\rceil =} {\displaystyle \lceil {x}\rceil =} ceiling( {\displaystyle x} ), {\displaystyle 10_{b}^{~x}=b^{x}} {\displaystyle 10_{b}^{~x}=b^{x}} in base 10, {\displaystyle \log _{10_{b}}(x)=\log _{b_{10}}(x)} {\displaystyle \log _{10_{b}}(x)=\log _{b_{10}}(x)} \newline and {\displaystyle b}\ is\ the\ base\ of\ the\ constant. \newline
+
+A slightly different expression is given by Eric W. Weisstein (MathWorld): \newline
+
+{\displaystyle C_{m}=\sum _{n=1}^{\infty }{\frac {n}{m^{\left(n+\sum \limits _{k=1}^{n-1}\left\lfloor \log _{m}(k+1)\right\rfloor \right)}}}}
+ where {\displaystyle \lfloor {x}\rfloor =} {\displaystyle \lfloor {x}\rfloor =} floor( {\displaystyle x} x).
+\newline
+\section*{References}
+https://en.wikipedia.org/wiki/Champernowne\_constant
+%%% End document
+\end{document}

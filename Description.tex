@@ -54,7 +54,8 @@
 \begin{document}
 \maketitle
 \section*{Introduction}
-In mathematics, the Champernowne constant C10 is a transcendental real constant whose decimal expansion has important properties. It is named after economist and mathematician D. G. Champernowne, who published it as an undergraduate in 1933.
+In mathematics, the Champernowne constant C10, named after economist and mathematician D. G. Champernowne, is a transcendental real constant whose decimal expansion has important properties.\newline
+Transcendental numbers are the numbers which are not the root of any polynomial with integer coeffients, i.e., opposite of algebraic numbers.\newline
 For base 10, the number is defined by concatenating representations of successive integers:
 \[ C10 = 0.12345678910111213141516\cdots \]  
 
@@ -63,19 +64,26 @@ Champernowne constants can also be constructed in other bases, similarly, for ex
 \[ C2 = 0.11011100101110111\cdots \]
 \[ C3 = 0.12101112202122\cdots \]
 
-The Champernowne constants can be expressed exactly as infinite series:\newline
+The Champernowne constants can be expressed exactly as infinite series:
 
-{\displaystyle C_{m}=\sum _{n=1}^{\infty }{\frac {n}{10_{b}^{~\left(\sum \limits _{k=1}^{n}\left\lceil \log _{10_{b}}(k+1)\right\rceil \right)}}}} \newline
+\begin{align*}
+{\displaystyle C_{m}=\sum _{n=1}^{\infty }{\frac {n}{10_{b}^{~\left(\sum \limits _{k=1}^{n}\left\lceil \log _{10_{b}}(k+1)\right\rceil \right)}}}}
+\end{align*}
 
+\begin{align*}
+where\ {\displaystyle \lceil {x}\rceil =} \ ceiling(x), {\displaystyle 10_{b}^{~x}=b^{x}}\ in\ base\ 10,\ {\displaystyle \log _{10_{b}}(x)=\log _{b_{10}}(x)} \ and\  b\ is\ the\ base\ of \ the \ constant.
+\end{align*}
 
+\begin{flushleft}
+In simpler words, we can say that Champernowne Constant is formed by taking the sequence of whole numbers, i.e., 1, 2, 3, 4, 5, and so on and putting them behind a decimal point.\newline
 
-where {\displaystyle \lceil {x}\rceil =} {\displaystyle \lceil {x}\rceil =} ceiling( {\displaystyle x} ), {\displaystyle 10_{b}^{~x}=b^{x}} {\displaystyle 10_{b}^{~x}=b^{x}} in base 10, {\displaystyle \log _{10_{b}}(x)=\log _{b_{10}}(x)} {\displaystyle \log _{10_{b}}(x)=\log _{b_{10}}(x)} \newline and {\displaystyle b}\ is\ the\ base\ of\ the\ constant. \newline
+This constant is interesting because it can be understood to contain an encoding of any past, present or future information, because any given sequence of numbers can be shown to exist somewhere in the champernowne representation.\newline
 
-A slightly different expression is given by Eric W. Weisstein (MathWorld): \newline
+Another interesting feature of this number that if a person is picking up a number then there is 1/10 chance of getting a specific one digit number, 1/100 chance of getting a specific two digit number, 1/1000 chance of getting a specific three digit number and so on.\newline
 
-{\displaystyle C_{m}=\sum _{n=1}^{\infty }{\frac {n}{m^{\left(n+\sum \limits _{k=1}^{n-1}\left\lfloor \log _{m}(k+1)\right\rfloor \right)}}}}
- where {\displaystyle \lfloor {x}\rfloor =} {\displaystyle \lfloor {x}\rfloor =} floor( {\displaystyle x} x).
-\newline
+In other words, for Champernowne Constant, in base 10, we would expect strings [0],[1],[2],...,[9] to occur 1/10 of the time, strings [0,0],[0,1],...,[9,8],[9,9] to occur 1/100 of the time, and so on, which also implies that Champernowne Constant is normal in base 10.
+\end{flushleft}
+
 \section*{References}
 https://en.wikipedia.org/wiki/Champernowne\_constant
 %%% End document

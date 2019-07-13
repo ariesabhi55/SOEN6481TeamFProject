@@ -1,0 +1,227 @@
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url}
+
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\title{
+		%\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{Department of Computer Science and Software Engineering } \\ [25pt]
+		\horrule{0.5pt} \\[0.4cm]
+		\huge Champernowne Constant (C10) \\
+		\horrule{2pt} \\[0.5cm]
+}
+
+\author{Abhishek Rajput\\ \texttt{aries.abhi55@gmail.com}} % Author name and email address
+\usepackage{datetime}
+\newdate{date}{11}{07}{2019}
+\date{\displaydate{date}}
+
+%%% Begin document
+\begin{document}
+\maketitle
+\section*{Introduction}
+In this document, I will discuss the interview conducted with the potential users of Champernowne Constant. \newline
+It includes criteria for the selection of interviewees, questions asked in the interview, interviewee's responses to the questions and my analysis of this interview process.
+
+\section*{Criteria used to select Interviewee}
+As Champernowne Constant is famous for its transcendental and normal nature so in my opinion, a person having a strong background in mathematics would be the most suitable match for being an interviewee.
+Keeping this thing in mind, I interviewed below two people over the phone based on my designed questionnaire.
+
+\begin{flushleft}
+\textbf{1. Interviewee 1}
+\\Name: Dr. Pankaj Srivastava 
+\\Qualification: M.Sc Mathematics, Ph.D
+\end{flushleft}
+
+\begin{flushleft}
+\textbf{2. Interviewee 2}
+\\Name: Aayush Sharma 
+\\Qualification: M.Sc Mathematics
+\end{flushleft}
+
+\section*{Interview Questions \& Responses}
+\begin{flushleft}
+\textbf{Question 1: How would you define Champernowne Constant?}
+\\Response:
+\\Interviewee 1: A number having a sequence of positive integers after a decimal.
+\\Interviewee 2: Simply a decimal following with positive integers numbers till any number of places.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 2: What is the first thing that comes to your mind when you hear about Champernowne Constant?}
+\\Response:
+\\Interviewee 1: Number having transcendental and normal number properties
+\\Interviewee 2: Normal number
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 3: How is this normal number different from other normal numbers?}
+\\Response:
+\\Interviewee 1: As far as I know, because this number is normal in both base 2 and 10.
+\\Interviewee 2: Well, not very sure about that.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 4: Have you ever used this number in your career?}
+\\Response:
+\\Interviewee 1: Not many times, but yes, sometimes to give an example of transcendental and normal number to my students.
+\\Interviewee 2: Never used, but read about it.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 5: Do you know of any application which uses this number? }
+\\Response:
+\\Interviewee 1: I read that this number can trick any program which attempts to find regularity in sequences.
+\\Interviewee 2: No
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 6: Do you know of any field in which it could prove its worth?}
+\\Response:
+\\Interviewee 1: In my teaching field for sure.
+\\Interviewee 2: In the education field, to show what are transcendental and normal numbers.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 7: Can we use this number in combination with any other number to perform some useful tasks?}
+\\Response:
+\\Interviewee 1: As we get this number after concatenating positive integers after a decimal point  so if we multiply this number with 1 having leading 0s equal to digits after the decimal places then 
+we can eventually get a number having digits as the sequence of positive integers.
+\\Interviewee 2: No idea.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 8: If I build a calculator to calculate this number what features would you like to be present in that calculator?}
+\\Response:
+\\Interviewee 1: As this number is normal, your calculator should provide the functionality to find the occurrences of a certain number in this constant and should provide other similar kinds of functionalities as well.
+\\Interviewee 2: To get this number up-to any limit.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 9: Could you please tell me any other feature that can make this calculator more useful?}
+\\Response:
+\\Interviewee 1: You could probably add the functionality to generate graphs of the results obtained. As you know, graphs give a better visualization of results.
+\\Interviewee 2: If possible, compute other complex numbers too.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 10: How can this calculator be useful to you?}
+\\Response:
+\\Interviewee 1: If I can prove to my students that why this number is a normal number, it would definitely be useful for me.
+\\Interviewee 2: To generate this number of any length.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 11: How many digits after the decimal should be generated by the calculator for this number?}
+\\Response:
+\\Interviewee 1: You should give the user the flexibility to enter the precision level.
+\\Interviewee 2: I think it should be user dependent.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 12: In that calculator, would you like to get the result in different formats?}
+\\Response:
+\\Interviewee 1: I don't think there is any need for that.
+\\Interviewee 2: Why not, if possible.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 13: What inputs would you want to give to the calculator in order to generate this number?}
+\\Response:
+\\Interviewee 1: I think just the precision level should be enough.
+\\Interviewee 2: Base and number of digits after the decimal.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 14: How would you like to use this calculator (Console or UI)?}
+\\Response:
+\\Interviewee 1: Either way, but a calculator with UI would be easier to use.
+\\Interviewee 2: UI, for sure.
+\end{flushleft}
+
+\begin{flushleft}
+\setlength{\parskip}{\baselineskip}
+\hrulefill
+\\\textbf{Question 15: If I choose to build a calculator with UI, what things should be kept in mind to have a good UX?}
+\\Response:
+\\Interviewee 1: Good placement of buttons.
+\\Interviewee 2: Number should be displayed properly, proper alignment of components, good color contrast.
+\end{flushleft}
+
+\section*{Conclusion}
+\begin{flushleft}
+From this interview, I have concluded below points:
+
+1. This number is mostly popular for its Normal behavior.
+\\2. This number can trick programs which attempts to find regularity in sequences.
+\\3. The number of places to display after the decimal in the calculator should be dependent on the user's input.
+\\4. It is better to have UI for this calculator.
+\\5. For additional functionality, you can add 'Generate Graph Functionality'.
+\\6. We can use this number to find the position of any number in the string made of a sequence of positive integers.
+\\7. We can also use this number to answer questions like- How many digits are there in total in the two digit numbers 10 to 99, Find all the positions at which a string occurs, Compute the position at which a given number (string of digits) first appears in the sequence, number of occurrences of certain number etc.
+
+\end{flushleft}
+
+
+%%% End document
+\end{document}

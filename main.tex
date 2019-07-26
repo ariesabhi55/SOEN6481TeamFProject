@@ -650,47 +650,47 @@ It includes a description of each Use Case, \gls{Use Case Diagram} and \gls{Acti
 \section{Use Cases relevant to calculator for Champernowne Constant  }
 
 \begin{flushleft}
-\textbf{1: Generate Number }
+\textbf{UC1: Generate Number }
 \\Description - This use case includes 'Display Result' use case. This use case is responsible for generating Champernowne Constant up-to-the places desired by the user.
 \end{flushleft}
 
 \begin{flushleft}
-\textbf{2: Perform Calculation }
+\textbf{UC2: Perform Calculation }
 \\Description - This use includes 'Display Result' use case and extended by 'Get Occurrences' and 'Get Number Place' use cases. This use case is responsible for performing the calculation based on user inputs and display the results.
 \end{flushleft}
 
 \begin{flushleft}
-\textbf{3: Display Results }
+\textbf{UC3: Display Results }
 \\Description - This use is included in 'Generate Number' and 'Perform Calculation' use cases. This is responsible for displaying the results to the user in the output screen.
 \end{flushleft}
 
 \begin{flushleft}
-\textbf{4: Get Occurrences}
+\textbf{UC4: Get Occurrences}
 \\Description - This use case is the specialization of 'Perform Calculation' use case. This use case case is responsible for calculating the number of occurrences of a particular number in the generated number.
 \end{flushleft}
 
 \begin{flushleft}
-\textbf{5: Get Number Place }
-\\Description -This use case is the specialization of 'Perform Calculation' use case. This use case is responsible for retrieving the value stored by 'Store Result' use case.
+\textbf{UC5: Get Number Place }
+\\Description -This use case is the specialization of 'Perform Calculation' use case. This use case is responsible for calculate the position of first occurrence of a particular number in generated Champernowne Constant.
 \end{flushleft}
 
 \begin{flushleft}
-\textbf{6: Edit Input Field }
+\textbf{UC6: Edit Input Field }
 \\Description - This use case gives the user the option to insert or edit the values in the Input field.
 \end{flushleft}
 
 \begin{flushleft}
-\textbf{7: Clear Input Field  }
+\textbf{UC7: Clear Input Field  }
 \\Description - This use case includes 'Edit Input Field' use case. This use case clears the input field.
 \end{flushleft}
 
 \begin{flushleft}
-\textbf{8: Store Result }
+\textbf{UC8: Store Result }
 \\Description - This use case is responsible for storing the result so that it can be used at a later time, if needed.
 \end{flushleft}
 
 \begin{flushleft}
-\textbf{9: Retrieve Result}
+\textbf{UC9: Retrieve Result}
 \\Description - This use case includes 'Edit Input Field' use case. This use case is responsible for retrieving the value stored by 'Store Result' use case and populate the Input field using retrieved value. 
 \end{flushleft}
 
@@ -722,6 +722,129 @@ It includes a description of each Use Case, \gls{Use Case Diagram} and \gls{Acti
     \includegraphics[width=15cm]{NormalScenario2.png}
     \caption*{\textbf{Fig 4.2: Normal Scenario for Use Cases}}
 \end{figure}
+
+%%Use case model ends
+
+
+%%User Stories starts
+
+\chapter{User Stories (Problem 6)}
+In this section, I will cover user stories relevant to Calculator for Champernowne Constant. \newline
+
+  
+\section{User Stories relevant to calculator for Champernowne Constant }
+
+\begin{center}
+\begin{tabular}{| m{1.3cm} | m{27em} | m{4cm}| m{1.2cm} | m{1.2cm} |} 
+\hline
+Identifier & User Stories & Constraint & Priority & Estimate \\ [0.7ex]
+\hline\hline
+US1 & As a user, I want to generate the Champernowne Constant. & Performance, Correctness, Readability & 5 & 5 \\ 
+\hline
+US2 & As a user, I want to choose the number of digits after the decimal point in generated Champernowne Constant. & Field validation, Modifiability & 4 & 3 \\ 
+\hline
+US3 & As a user, I want to calculate the number of occurrences of a particular number in generated Champernowne Constant. & Performance, Correctness, Reliability & 4 & 5 \\ 
+\hline
+US4 & As a user, I want to calculate the position of the first occurrence of a particular number in generated Champernowne Constant. & Performance, Correctness, Reliability & 4 & 5 \\ 
+\hline
+US5 & As a user, I want to store the result, to use it at a later time, if needed. & Reusability & 2 & 2 \\ 
+\hline
+US6 & As a user, I want to retrieve the stored result, whenever needed. & Readability, Operability & 2 & 2 \\ 
+\hline
+US7 & As a user, I want to delete the content of the input field one by one, from end. & Modifiability & 3 & 1 \\ 
+\hline
+US8 & As a user, I want to clear the content of the input field. & Modifiability & 3 & 1 \\ 
+\hline
+US9 & As a user, I want to clear the content of the output screen. & Modifiability & 2 & 1 \\ 
+\hline
+US10 & As a user, I want to do basic calculations: Addition, Subtraction, Multiplication, and Division. & Performance, Correctness, Readability & 4 & 4 \\ 
+\hline
+US11 & As a user, I want to insert values in input field, either using calculator keys or using a keyboard or both. & Reliability, Operability & 5 & 4 \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\section{Acceptance Criteria for User Stories }
+
+\begin{center}
+\begin{tabular}{| m{1.3cm} |  m{1.2cm} | m{35em} |} 
+\hline
+S. No. & User Stories & Acceptance Tests \\ [0.7ex]
+\hline\hline
+1 & US1 & a). Must be in base 10.\newline
+b). Must have a decimal point at second place.\newline
+c). Complete number must be readable.\newline
+d). Number must get displayed within 5 seconds. \\ 
+\hline
+2 & US2 & a). Number of digits entered must be integer only. \\ 
+\hline
+3 & US3 & a). Occurrences obtained must be for the entered number only.\newline
+b). The result must get displayed within 5 seconds. \\ 
+\hline
+4 & US4 & a). Position obtained must be for the entered number only.\newline
+b). The position displayed must be of the first occurrence only.\newline
+c). The result must get displayed within 5 seconds.  \\ 
+\hline
+5 & US5 & a). User must get the confirmation regarding the operation. \\ 
+\hline
+6 & US6 & a). User must get the stored result only. \\ 
+\hline
+7 & US7 & a). Only one input must get deleted at a time. \\ 
+\hline
+8 & US8 & a). Input field must get cleared at once. \\ 
+\hline
+9 & US9 & a). Output screen must get cleared at once. \\ 
+\hline
+10 & US10 & a). Results must be correct.\newline
+b). The result must get displayed within 5 seconds.  \\ 
+\hline
+11 & US11 & a). User must be able to provide inputs using both keyboard and keypad available on the screen.   \\ 
+\hline
+\end{tabular}
+\end{center}
+
+%%User stories ends
+
+%% traceability matrix starts
+
+\chapter{Backward Traceability Matrix (Problem 7)}
+In this section, I will cover backward traceability matrix relevant to Calculator for Champernowne Constant. \newline
+
+  
+\section{Backward Traceability Matrix relevant to calculator for Champernowne Constant }
+
+\begin{center}
+\begin{tabular}{| m{1cm} | m{1.2cm} | m{25em} |} 
+\hline
+S. No. & User Stories & Source \\ [0.7ex]
+\hline\hline
+1 & US1 & UC1 \\ 
+\hline
+2 & US2 & Interview Question: 16, 18  \\ 
+\hline
+3 & US3 & UC4, Interview Question: 13 \\ 
+\hline
+4 & US4 & UC5, Interview Question: 13  \\ 
+\hline
+5 & US5 & UC8 \\ 
+\hline
+6 & US6 & UC9, US5 \\ 
+\hline
+7 & US7 & UC6, Windows Calculator \\ 
+\hline
+8 & US8 & UC7, Windows Calculator \\ 
+\hline
+9 & US9 & Windows Calculator \\ 
+\hline
+10 & US10 & UC2, Windows Calculator \\ 
+\hline
+11 & US11 & Windows Calculator \\ 
+\hline
+\end{tabular}
+\end{center}
+
+%% traceability matrix ends
+
 
 %%Glossary section starts
 \printglossary

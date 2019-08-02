@@ -1,0 +1,340 @@
+
+\documentclass[paper=a4, fontsize=11pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+
+\usepackage[numberedsection]{glossaries}
+
+\makeglossaries
+ 
+\newglossaryentry{Persona}
+{
+        name=Persona,
+        description={Is the aspect of someone's character that is presented to or perceived by others}
+}
+ 
+\newglossaryentry{Domain Model}
+{
+        name=Domain Model,
+        description={It is a conceptual model of the domain that incorporates both behavior and data}
+}
+ 
+\newglossaryentry{Use Case Diagram}
+{
+        name=Use Case Diagram,
+        description={A use case diagram at its simplest is a representation of a user's interaction with the system that shows the relationship between the user and the different use cases in which the user is involved}
+}
+
+\newglossaryentry{Activity Diagram}
+{
+        name=Activity Diagram,
+        description={Activity diagrams are graphical representations of workflows of stepwise activities and actions with support for choice, iteration, and concurrency}
+}
+
+%%new packages
+
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[backend=biber,
+style=numeric,
+sorting=none,
+isbn=false,
+doi=false,
+url=false,
+]{biblatex}\addbibresource{bibliography.bib}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{wasysym}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{ragged2e}
+\usepackage[svgnames,table]{xcolor}
+\usepackage{tikz}
+\usepackage{longtable}
+\usepackage{changepage}
+\usepackage{setspace}
+\usepackage{hhline}
+\usepackage{multicol}
+\usepackage{tabto}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{fancyhdr}
+\usepackage[toc,page]{appendix}
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{shapes.symbols,shapes.geometric,shadows,arrows.meta}
+\tikzset{>={Latex[width=1.5mm,length=2mm]}}
+\usepackage{flowchart}\usepackage[paperheight=11.0in,paperwidth=8.5in,left=1in,right=1in,top=0.5in,bottom=0.5in,headheight=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\TabPositions{0.5in,1.0in,1.5in,2.0in,2.5in,3.0in,3.5in,4.0in,4.5in,5.0in,5.5in,6.0in,6.5in,7.0in,}
+
+\urlstyle{same}
+
+
+ %%%%%%%%%%%%  Set Depths for Sections  %%%%%%%%%%%%%%
+
+% 1) Section
+% 1.1) SubSection
+% 1.1.1) SubSubSection
+% 1.1.1.1) Paragraph
+% 1.1.1.1.1) Subparagraph
+
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+ %%%%%%%%%%%%  Set Depths for Nested Lists created by \begin{enumerate}  %%%%%%%%%%%%%%
+
+
+\setlistdepth{9}
+\renewlist{enumerate}{enumerate}{9}
+		\setlist[enumerate,1]{label=\arabic*)}
+		\setlist[enumerate,2]{label=\alph*)}
+		\setlist[enumerate,3]{label=(\roman*)}
+		\setlist[enumerate,4]{label=(\arabic*)}
+		\setlist[enumerate,5]{label=(\Alph*)}
+		\setlist[enumerate,6]{label=(\Roman*)}
+		\setlist[enumerate,7]{label=\arabic*}
+		\setlist[enumerate,8]{label=\alph*}
+		\setlist[enumerate,9]{label=\roman*}
+
+\renewlist{itemize}{itemize}{9}
+		\setlist[itemize]{label=$\cdot$}
+		\setlist[itemize,1]{label=\textbullet}
+		\setlist[itemize,2]{label=$\circ$}
+		\setlist[itemize,3]{label=$\ast$}
+		\setlist[itemize,4]{label=$\dagger$}
+		\setlist[itemize,5]{label=$\triangleright$}
+		\setlist[itemize,6]{label=$\bigstar$}
+		\setlist[itemize,7]{label=$\blacklozenge$}
+		\setlist[itemize,8]{label=$\prime$}
+
+\setlength{\topsep}{0pt}\setlength{\parskip}{8.04pt}
+\setlength{\parindent}{0pt}
+
+\renewcommand{\arraystretch}{1.3}
+
+%%New packages
+
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+\usepackage{caption}
+
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\titleformat{\chapter}{\centering\normalfont\huge}{\thechapter.}{20pt}{\huge}
+
+%%% Begin document
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vfill
+    \includegraphics[width=9cm]{Concordia-University-logo.png}
+    {\bfseries\Large
+        \vskip2cm
+        Department of Computer Science and Software Engineering \\
+        \vskip2cm
+        SOEN 6481: SOFTWARE SYSTEMS REQUIREMENTS SPECIFICATION\\
+        \vskip2cm
+        Abhishek Rajput\\
+        Student ID: 40093879\\
+        \vskip9mm
+        22 July, 2019\\
+    }    
+    \vfill
+    %\includegraphics[width=4cm]{Concordia-University-logo.png} 
+    \vfill
+    \vfill
+\end{titlepage}
+
+\tableofcontents
+
+\chapter{Abstract}
+This project investigates and describes the concept of Champernowne Constant C\textsubscript{10} which is a transcendental real constant. For base 10, the number is defined by concatenating representations of successive integers i.e. 0.12345678910111213141516...
+\vskip1mm
+Since it's decimal expansion has important and unique properties, many mathematicians and teachers have found this number profoundly useful. It is constructed in such a way that it's decimal digits are easy to investigate. This allows establishing easily that it is normal in its base.
+\vskip1mm
+During the project, I have also interviewed two people with strong mathematical background regarding this constant and its application. Moreover, I have created a persona based on the analysis of the interview that was conducted.
+\vskip1mm
+In this report, I have discussed concepts relevant to Calculator for Champernowne Constant. It includes a description of each concept, relationships between concepts and a Domain Model.
+\vskip1mm
+Additionally, illustration with the description of each Use Case, Use Case Diagram and Activity Diagram for the Use Cases and UML for the normal scenario of each use case has also been included in this report.
+
+
+\chapter{Acknowledgement}
+I would like to express my deepest appreciation to all those who helped me and provided me the possibility to complete this project.
+\vskip1mm
+This project would not have been possible without the essential and gracious support of Prof. P. Kamthan whose contribution in stimulating suggestions and encouragement guided me throughout.
+\vskip1mm
+I would also like to express my sincere gratitude to our Teaching Assistant, Mr. Mehran Ishanian, who had given his assistance to clarify my doubts during this project.
+\vskip1mm
+Furthermore, I would also like to acknowledge with much appreciation the crucial role of the interviewee Dr. Pankaj Srivastava and Mr. Aayush Sharma, who gave their valuable time from their busy schedule to help me in completion of this project. 
+\vskip1mm
+Finally, I would like to thank my family and friends for all their understanding and support. 
+
+
+\chapter{Changes made in the Deliverable 1 (D1)}
+For problem 5 (Use Case Model)[Chapter 7, Page no. 12]- Identifiers for use cases have been changed from 1,2,3.. to UC1, UC2, UC3.., so that they can be referenced accordingly in traceability matrix.
+
+
+%%User Stories starts
+
+\chapter{User Stories (Problem 6)}
+In this section, I will cover user stories relevant to Calculator for Champernowne Constant. \newline
+
+  
+\section{User Stories relevant to calculator for Champernowne Constant }
+
+\begin{center}
+\begin{tabular}{| m{1.3cm} | m{27em} | m{4cm}| m{1.2cm} | m{1.2cm} |} 
+\hline
+Identifier & User Stories & Constraint & Priority & Estimate \\ [0.7ex]
+\hline\hline
+US1 & As a user, I want to generate the Champernowne Constant. & Generated number must be a decimal number. & 5 & 13 \\ 
+\hline
+US2 & As a user, I want to choose the number of digits after the decimal point in generated Champernowne Constant. & Chosen number of digits must be a positive integer. & 4 & 5 \\ 
+\hline
+US3 & As a user, I want to calculate the number of occurrences of a particular number in generated Champernowne Constant. & Desired number must be a positive integer. & 4 & 13 \\ 
+\hline
+US4 & As a user, I want to calculate the position of the first occurrence of a particular number in generated Champernowne Constant. & Calculated place must be for first occurrence. & 4 & 13 \\ 
+\hline
+US5 & As a user, I want to store the result, to use it at a later time, if needed. & Stored number must be reusable. & 2 & 3 \\ 
+\hline
+US6 & As a user, I want to retrieve the stored result, whenever needed. & Retrieved result be same as stored result. & 2 & 3 \\ 
+\hline
+US7 & As a user, I want to delete the content of the input field one by one, from end. & Only one value must be deleted at a time. & 3 & 1 \\ 
+\hline
+US8 & As a user, I want to clear the content of the input field. & Complete input field must get cleared at once. & 3 & 1 \\ 
+\hline
+US9 & As a user, I want to clear the content of the output screen. & Complete output screen must get cleared at once. & 2 & 1 \\ 
+\hline
+US10 & As a user, I want to do basic calculations: Addition, Subtraction, Multiplication, and Division. & Calculations must be correct & 4 & 8 \\ 
+\hline
+US11 & As a user, I want to insert values in input field, either using calculator keys or using a keyboard or both. & Both input ways must produce same results  & 5 & 8 \\ 
+\hline
+\end{tabular}
+\end{center}
+
+\section{Acceptance Tests for User Stories }
+
+\begin{center}
+\begin{tabular}{| m{1.3cm} |  m{1.2cm} | m{35em} |} 
+\hline
+S. No. & User Stories & Acceptance Tests \\ [0.7ex]
+\hline\hline
+1 & US1 & a). Must be in base 10.\newline
+b). Must have a decimal point at second place.\newline
+c). Complete number must be readable.\newline
+d). Number must get displayed within 10 seconds. \\ 
+\hline
+2 & US2 & a). Number of digits entered must be integer only. \\ 
+\hline
+3 & US3 & a). Occurrences obtained must be for the entered number only.\newline
+b). The result must get displayed within 10 seconds. \\ 
+\hline
+4 & US4 & a). Position obtained must be for the entered number only.\newline
+b). The position displayed must be of the first occurrence only.\newline
+c). The result must get displayed within 10 seconds.  \\ 
+\hline
+5 & US5 & a). User must get the confirmation regarding the operation. \\ 
+\hline
+6 & US6 & a). User must get the stored result only. \\ 
+\hline
+7 & US7 & a). Only one input must get deleted at a time. \\ 
+\hline
+8 & US8 & a). Input field must get cleared at once. \\ 
+\hline
+9 & US9 & a). Output screen must get cleared at once. \\ 
+\hline
+10 & US10 & a). Results must be correct.\newline
+b). The result must get displayed within 10 seconds.  \\ 
+\hline
+11 & US11 & a). User must be able to provide inputs using both keyboard and keypad available on the screen.   \\ 
+\hline
+\end{tabular}
+\end{center}
+
+%%User stories ends
+
+%% traceability matrix starts
+
+\chapter{Backward Traceability Matrix (Problem 7)}
+In this section, I will cover backward traceability matrix relevant to Calculator for Champernowne Constant. \newline
+
+  
+\section{Backward Traceability Matrix relevant to calculator for Champernowne Constant }
+
+\begin{center}
+\begin{tabular}{| m{.8cm} | m{1.8cm} | m{.8cm} | m{.8cm}| m{3cm} | m{1cm} | m{3cm} | m{1.5cm} |} 
+\hline
+S. No. & User Stories & UC & US & Interview & Survey & Global & Persona \\ [0.7ex]
+\hline\hline
+1. & US1 & UC1 &  &  &  &  & \\ 
+\hline
+2 & US2 &  &  & Question: 16, 18 &  &  &   \\ 
+\hline
+3 & US3 & UC4 &  & Question: 13 &  &  &  \\ 
+\hline
+4 & US4 & UC5 &  & Question: 13 &  &  &  \\ 
+\hline
+5 & US5 & UC8 &  &  &  &  &  \\ 
+\hline
+6 & US6 & UC9 & US5 &  &  &  &  \\ 
+\hline
+7 & US7 & UC6 &  &  &  & Windows Calculator &  \\ 
+\hline
+8 & US8 & UC7 &  &  &  & Windows Calculator & \\ 
+\hline
+9 & US9 &  &  &  &  & Windows Calculator &  \\ 
+\hline
+10 & US10 & UC2 &  &  &  & Windows Calculator &  \\ 
+\hline
+11 & US11 &  &  &  &  & Windows Calculator &  \\ 
+\hline
+\end{tabular}
+\end{center}
+
+%% traceability matrix ends
+
+
+%%Glossary section starts
+\printglossary
+
+%%References section starts
+\chapter{References}
+
+https://en.wikipedia.org/wiki/Champernowne\_constant
+\vskip1mm
+http://mathworld.wolfram.com/ChampernowneConstant.html
+\vskip1mm
+\textbf{GitHub Project Workspace Address:} \url{https://github.com/ariesabhi55/SOEN6481TeamFProject} 
+%%% End document
+\end{document}
